@@ -1,0 +1,114 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*基本*/
+body{ margin:0; padding:0;}
+
+
+/*全BOX版面*/
+.WRAPPER { position: relative; display:block; margin: 0 auto; padding: 0; width:100%;  min-width:1220px; overflow:hidden; font-family:"微軟正黑體","Microsoft JhengHei",Helvetica; background: #c9f3fb;}
+.WRAPPER img { border:0px; vertical-align:top;}
+.WRAPPER a { text-decoration:none;}
+		@media screen and (max-width:767px){
+		.WRAPPER { min-width: inherit; padding-bottom:50px; }
+		.WRAPPER img {  width:100%;  height:auto;}
+	}
+	
+/*背景*/
+.bgtop  { z-index:0; position:absolute; top:0; left:0; width:100%; min-width:1220px; height:100%; background: url(bgtop.png) repeat-x center top ;}
+	@media screen and (max-width:767px){
+		.bgtop { min-width: inherit;  background: url(m_bgtop.jpg) no-repeat center 40px; background-size:100%;}
+	}
+	.bg{ z-index:0; position:absolute; top:0; left:0; width:100%; min-width:1220px; height:10100px; background: url(bg.jpg?t=1621836947958) no-repeat center top ;}
+	@media screen and (max-width:767px){
+		.bg { display:none}
+	}
+
+/*版頭*/
+.Area_top {}
+.Area_top .momologo { z-index:2; position: absolute;top: 47px; left:40px;}
+.Area_top .momologo a { display:block; width:200px; height:30px; background: url(momo_logo.png) no-repeat;}
+.Area_top .momologo a:hover{ background: url(momo_logo_on.png) no-repeat;}
+	@media screen and (max-width:767px){
+		.Area_top { height: auto;}
+		.Area_top .momologo { display:none;}
+	}
+
+	
+/*隱藏*/
+.for_pc {}
+.for_phone { display:none !important;}
+	@media screen and (max-width:767px){
+		.for_pc { display:none !important;}
+		.for_phone { display: inherit !important;}
+	}
+
+/*區塊_all*/
+.Area { position: relative; margin:0 auto; padding:0; border-radius:0; text-align:center; }
+.Area a { display:block;} 
+.Area .go_bt,.Area .go_bt2 {
+  -webkit-transition: all 0.4s ease;
+     -moz-transition: all 0.4s ease;
+      -ms-transition: all 0.4s ease;
+       -o-transition: all 0.4s ease;
+          transition: all 0.4s ease;}
+		  
+.Area .go_bt:hover, .Area .go_bt2:hover {
+	-webkit-transform:translateY(10px);
+	-moz-transform:translateY(10px);
+	 -ms-transform:translateY(10px);
+	  -o-transform:translateY(10px);
+		 transform:translateY(10px);
+		 padding-bottom:10px;}
+		 .Area .go_bt2:hover{padding-bottom:0;}
+		  .Area1220 { margin:0 auto; width:1220px;}
+		  .Area960 { margin:0 auto; width:960px;}
+
+.partArea1, .partArea2, .partArea3{position: relative;margin:0 auto; padding:0;}
+
+.partArea1 .Area_1bn_nopadding {float:left; margin: 0 auto; padding: 0;overflow: hidden;}
+.partArea1 .Area_1bn_nopadding a {position: absolute; width:100%; margin: 0 auto;}
+.partArea1 .Area_3bn_nopadding {position:absolute; width:100%; margin: 275px auto 0; padding: 0;overflow: hidden;}
+.partArea1 .Area_3bn_nopadding a {float: left;margin:0 auto;padding: 0;width: calc(33.33% - 10px);list-style: none;}
+.partArea1 .Area_3bn_nopadding a:nth-child(1){margin-left:0px!important;}
+.partArea1 .Area_3bn_nopadding a:nth-child(n){margin-left:15px;}
+
+.partArea2 .Area_1bn_nopadding {position:absolute; float:left; width:100%; margin: 163px auto 0; padding: 0;overflow: hidden;}
+.partArea2 .Area_1bn_nopadding a {position: relative; width:100%; margin:0 auto 40px;}
+
+.partArea3 .Area_1bn_nopadding {position:absolute; float:left; width:100%; margin:0 auto; padding: 0;overflow: hidden;}
+.partArea3 .Area_1bn_nopadding a {position: relative; width:100%; margin:0 auto;}
+.partArea3 .Area_2bn_nopadding {position:absolute; width: calc(100% - 80px); margin:0 auto; top:920px; padding: 0 40px;overflow: hidden;}
+.partArea3 .Area_2bn_nopadding a {float: left;margin:0 auto;padding: 0;width: calc(50% - 10px);list-style: none;}
+.partArea3 .Area_2bn_nopadding a:nth-child(1){margin-right:20px;}
+.partArea3 .Area_1bn_nopadding_sec{position:absolute; float:left; width:100%; margin:0 auto; top:1642px; padding: 0;overflow: hidden;}
+.partArea3 .Area_1bn_nopadding_sec a {position: relative; width:100%; margin:0 auto;}
+
+.sec_padding_fix{margin:15px auto 0!important;}
+
+@media screen and (max-width:767px){
+	.Area1220 { width:100%;}
+	.Area960 { width:100%;}
+	.partArea1 .Area_3bn_nopadding {margin: 0 auto;top:37%;}
+	.partArea2 .Area_1bn_nopadding {margin: 0 auto;top:9%}
+	.partArea2 .Area_1bn_nopadding a {width:90%;margin:0 auto;padding-bottom:5%;}
+	.partArea3 .Area_2bn_nopadding {width: 90%;top:43%;padding:0 5%;}
+	.partArea3 .Area_2bn_nopadding a {width: 49%;}
+	.partArea3 .Area_2bn_nopadding a:nth-child(1){margin-right:2%;}
+	.partArea3 .Area_1bn_nopadding_sec{width:90%;top:76%;left:5%;}
+	.momoStyle_yt_video_fix{margin-top:23%!important;}
+	.sec_padding_fix{top: 41.2% !important;}
+	.sec_padding_fix_sec{top: 74.5% !important;}
+}
+
+.momoStyle_yt_block {position: relative; width: 100%;}
+.momoStyle_yt_video {position: absolute; top: 255px;left: 3px;margin: 0 auto;width: 100%;}
+
+@media screen and (max-width:767px) {
+	.momoStyle_yt_block {position: relative; width: 100%;}
+	.momoStyle_yt_video {position: absolute;top: 0;margin-top: 22%;margin-left: 4.5%;padding-bottom: 51%;height: 0;overflow: hidden;}
+	.momoStyle_yt_video iframe,
+	.momoStyle_yt_video object,
+	.momoStyle_yt_video embed {position: absolute;top: 0;left: 0;width: 90.5%;height: 100%;
+	}
+}
